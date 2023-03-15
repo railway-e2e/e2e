@@ -30,6 +30,7 @@ const start = async () => {
     await server.listen({ port, host });
 
     console.log(`Server started at http://${host}:${port}`);
+    console.log(`Text: ${text}`);
   } catch (err) {
     console.log("Fastify failed to start");
     console.error(err);
